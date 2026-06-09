@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:pub.dev)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:vox01.appstudy.co.kr)",
+      "WebFetch(domain:api.flutter.dev)",
+      "Bash(flutter create *)",
+      "Bash(flutter pub *)",
+      "Bash(dart run *)",
+      "Bash(flutter analyze *)",
+      "Bash(flutter build *)",
+      "Bash(flutter clean *)",
+      "Bash(./gradlew --stop)",
+      "Bash(grep -E \"\\\\.kt$\")",
+      "Bash(grep -v \"^$\")",
+      "Bash(export PUB_CACHE=\"C:/PubCache\")",
+      "Bash(export GRADLE_USER_HOME=\"C:/GH/.gradle\")",
+      "Bash(export PUB_CACHE=\"C:/GH/AppData/Local/Pub/Cache\")",
+      "PowerShell(Stop-Process *)",
+      "Bash(flutter devices *)",
+      "Bash(flutter run *)",
+      "PowerShell(Copy-Item *)"
+    ]
+  }
+}
