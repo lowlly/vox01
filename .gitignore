@@ -43,3 +43,10 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Claude Code settings
+.claude/
+
+# Screenshots
+*.png.tmp
+스크린샷*.png
