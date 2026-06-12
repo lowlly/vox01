@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:wakelock_plus/wakelock_plus.dart';
 import 'webview_screen.dart';
 
 void main() {
   final binding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: binding);
+
+  WakelockPlus.enable();
 
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
