@@ -11,8 +11,6 @@ workflows:
       ios_signing:
         distribution_type: app_store
         bundle_identifier: kr.co.appstudy.vox01
-      vars:
-        APP_STORE_APPLE_ID: $APP_STORE_APPLE_ID  # Codemagic 환경변수에서 설정
 
     scripts:
       - name: Flutter pub get
@@ -22,7 +20,7 @@ workflows:
         script: |
           flutter build ios --release \
             --build-name=1.0.0 \
-            --build-number=$(($(app-store-connect get-latest-testflight-build-number "$APP_STORE_APPLE_ID") + 1))
+            --build-number=$BUILD_NUMBER
 
       - name: Create IPA
         script: |
