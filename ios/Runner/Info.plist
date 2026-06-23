@@ -70,7 +70,7 @@
 		<key>NSSpeechRecognitionUsageDescription</key>
 		<string>음성 인식 학습 기능을 위해 사용합니다.</string>
 		<key>UIStatusBarHidden</key>
-		<true/>
+		<false/>
 		<key>UIViewControllerBasedStatusBarAppearance</key>
 		<false/>
 	</dict>
